@@ -1,8 +1,19 @@
-# Databricks notebook source
-# Bronze Layer – Data Ingestion
+# ============================================================
+# Layer: Bronze
+# Purpose:
+#   Ingest raw data from Landing layer into Delta format.
+#   Apply basic type casting while preserving raw structure.
+#
+# Input Table:
+#   retail.landing_zone.retail_data
+#
+# Output Table:
+#   retail.bronze.retail_transactions
+#
+# Author: Deepika Mandapalli
+# ============================================================
 
-# If using Databricks Repo:
-# %run ./config/project_config
+
 from pyspark.sql import functions as F
 # Config
 source_table = "retail.landing_zone.retail_data"
