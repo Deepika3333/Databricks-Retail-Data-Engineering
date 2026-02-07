@@ -1,0 +1,18 @@
+# Data
+*.csv
+*.parquet
+*.delta
+*.db
+*.sqlite
+
+# Power BI
+*.pbix
+
+# Secrets
+.env
+*.key
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
